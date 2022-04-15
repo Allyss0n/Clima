@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body,button,input,select,textarea {
+    font-family: 'Poppins';
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+:root {
+    --barra: #bfbfc1;
+    --pfosco:#111;
+    --preto:(#070707);
+    --dark-blue: #1D1D1D;
+}
+
+h2, h4 {
+    margin: 5px;
+}
+
+h4{
+    font-weight: 300;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+    font-weight: 300;
+}
+
+h3 {
+    margin: 0px;
+}
+
+.iphone-container {
+    background: var(--dark-blue);
+    width: 350px;
+    height: 700px;
+    border-radius: 50px;
+    border: 20px solid #111;
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 40px 10px 20px;
+}
+
+.iphone-container .notch {
+    width: 180px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 90px);
+    border-radius: 0 0 30px 30px;
+
+    background-color:var(--pfosco);
+}
+
+.iphone-container .menu {
+    width: 100px;
+    height: 2px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 50px);
+    background-color: var(--barra);
+}
+
+.iphone-container .previsao {
+    color: var(--barra);
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    text-align: left;
+    padding: 0 20px;
+    margin-top: 50px;
+    grid-gap: rem;
+    
+}
+
+.iphone-container svg {
+    width:  100px;
+    height: 100px;
+    margin: 20px 5px 5px 5px;
+}
