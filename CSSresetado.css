@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;300;200&display=swap');
 
 body,button,input,select,textarea {
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 * {
@@ -26,22 +26,14 @@ body {
     --dark-blue: #1D1D1D;
 }
 
-h2, h4 {
-    margin: 5px;
-}
-
-h4{
-    font-weight: 300;
-}
-
 h1 {
-    font-size: 80px;
-    margin: 0;
-    font-weight: 300;
+    font-size: 70px;
+    font-weight: 200;
+    margin: 0px;
 }
 
 h3 {
-    margin: 0px;
+    font-weight: 400;
 }
 
 .iphone-container {
@@ -77,19 +69,34 @@ h3 {
     background-color: var(--barra);
 }
 
-.iphone-container .previsao {
-    color: var(--barra);
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    text-align: left;
-    padding: 0 20px;
-    margin-top: 50px;
-    grid-gap: rem;
-    
+
+.iphone-container .top-icon {
+    width: 50px;
+    height: 50px;
 }
 
-.iphone-container svg {
-    width:  100px;
-    height: 100px;
-    margin: 20px 5px 5px 5px;
+.iphone-container .city-name {
+    font-weight: 300;
+    color: var(--barra);
+}
+
+.iphone-container .week {
+    display: flex;
+    justify-content: space-between;
+}
+
+.iphone-container .week .day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iphone-container .week .day .temperature {
+    margin-top: 10px ;
+    font-weight: 300;
+    font-size: 14;
+}
+
+.iphone-container .week .day .week-day {
+    font-weight: 300;
 }
